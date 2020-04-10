@@ -4,12 +4,14 @@
       arrows
       animated
       v-model="slide"
-      autoplay="1000"
+      control-color="black"
+      style="height: fit-content"
+
 
     >
       <q-carousel-slide class="row flex flex-center" v-for="cut in cuts" :key="cut.h3Header" :name="cut.h3Header">
-        <q-img :src="cut.imgurl" class="col-6" ratio="1" style="height:300px "></q-img>
-        <div class="col-6">
+        <q-img :src="cut.imgurl" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" ratio="1" style="height:300px "></q-img>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <div class="row flex-center flex q-gutter-y-lg">
           <div class="text-h3 text-black self-center">{{cut.h3Header}}</div>
           <div class="text-subtitle1 text-black self-center">{{cut.pTagText}}</div>

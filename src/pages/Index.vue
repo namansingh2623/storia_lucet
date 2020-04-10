@@ -40,33 +40,26 @@
       </q-card>
       <q-card  bordered square class="col-12">
         <q-card-section>
-            <div class="row q-ma-none">
-              <h2 class="col-12">Overview</h2>
-              <h5 class="col-12 ellipsis">Calculate The High Wholesale Value Before You Buy Or Sell A Diamond</h5>
-              <p class="col-12 text-h6">{{overviewText}}</p>
-            </div>
+            <overview-comp></overview-comp>
         </q-card-section>
       </q-card>
-        <q-card>
+      <!--Cut card-->
+        <q-card class="cutCard">
           <q-card-section>
-            <div class="row flex-center">
-              <h3 class="col-12 ">Shape (Cut)</h3>
-              <q-img class="col-xs-12 col-sm-12 col-md-6 col-lg-6" src="https://4cs.gia.edu/wp-content/uploads/2017/05/Hero_Cut_700x394.jpg"></q-img>
-              <p class="text-h6 col-xs-12 col-sm-12 col-md-6 col-lg-6 self-center">{{underStandingDimondtxt}}</p>
-            </div>
+            <cut-comp></cut-comp>
           </q-card-section>
           <q-card-section>
           <my_carousal></my_carousal>
           </q-card-section>
         </q-card>
 
-      <q-card bordered square class="Clarity col-12">
+      <q-card bordered square class="ClarityCard col-12">
           <q-card-section>
-            <div class="row flex-center flex">
-            <h3>Clarity</h3>
-            <p class="electron-hide">{{clarityText}}</p>
-            </div>
+            <clarity-comp></clarity-comp>
           </q-card-section>
+        <q-card-section>
+          <clarity-carousal-comp></clarity-carousal-comp>
+        </q-card-section>
       </q-card>
     </div>
   </q-page>
@@ -75,8 +68,12 @@
 <script>
 import my_carousal from "../components/mycarousal";
 import TopCarousal from "../components/topCarousal";
+import ClarityComp from "../components/clarityComp";
+import CutComp from "../components/cutComp";
+import OverviewComp from "../components/overviewComp";
+import ClarityCarousalComp from "../components/clarityCarousalComp";
   export default {
-    components:{TopCarousal, my_carousal},
+    components:{ClarityCarousalComp, OverviewComp, CutComp, ClarityComp, TopCarousal, my_carousal},
     data(){
       return{
 
@@ -92,33 +89,6 @@ import TopCarousal from "../components/topCarousal";
           Clarity:'',
           cut:'',
         },
-        overviewText:'This calculator works as a guideline of value for most diamonds.  It is not an indication of our purchase or sale price.\n'+
-          ' We are very competitive in our valuations, but many factors go into pricing specific diamonds. \n'+
-          ' This original Diamond Price Calculator™️  has been relied upon by millions across the world since 2005. \n' +
-          '\n' +
-          'Sometimes you need a few tools to set your expectations before you set foot into a store. We invite you to use our Diamond Price Calculator, \n '+
-          ' it' +
-          '\'s an excellent tool to approximate the high wholesale price or value of a loose diamond in US dollars.',
-        underStandingDimondtxt:'Diamonds are renowned for their ability to transmit light and sparkle so intensely. We often think of a diamond’s cut as shape \n'+
-          ' (round, heart, oval, marquise, pear), but what diamond cut actually does mean how well a diamond’s facets interact with light. Precise artistry and \n '+
-          'workmanship are required to fashion a stone so its proportions, symmetry and polish deliver the magnificent return of light only possible in a diamond.',
-
-
-
-        clarityText:'Because diamonds formed deep within the earth, under extreme heat and pressure, they often contain unique birthmarks, either internal (inclusions) or external (blemishes).\n' +
-          '\n' +
-          'Diamond clarity refers to the absence of these inclusions and blemishes. Diamonds without these birthmarks are rare, and rarity affects a diamond’s value. Using the GIA International Diamond Grading System™, diamonds are assigned a clarity grade that ranges from flawless (FL) to diamonds with obvious inclusions (I3).\n' +
-          '\n' +
-          'Every diamond is unique. None is absolutely perfect under 10× magnification, though some come close. Known as Flawless diamonds, these are exceptionally rare. Most jewelers have never even seen one.\n' +
-          '\n' +
-          'The GIA Clarity Scale contains 11 grades, with most diamonds falling into the VS (very slightly included) or SI (slightly included) categories. In determining a clarity grade, the GIA system considers the size, nature, position, color or relief, and quantity of clarity characteristics visible under 10× magnification.\n' +
-          '\n' +
-          'Flawless (FL) - No inclusions or blemishes are visible to a skilled grader using 10× magnification\n' +
-          'Internally Flawless (IF) - No inclusions and only blemishes are visible to a skilled grader using 10× magnification\n' +
-          'Very, Very Slightly Included (VVS1 and VVS2) - Inclusions are difficult for a skilled grader to see under 10× magnification\n' +
-          'Very Slightly Included (VS1 and VS2) - Inclusions are minor and range from difficult to somewhat easy for a skilled grader to see under 10x magnification\n' +
-          'Slightly Included (SI1 and SI2) - Inclusions are noticeable to a skilled grader under 10x magnification\n' +
-          'Included (I1, I2, and I3) - Inclusions are obvious under 10× magnification and may affect transparency and brilliance',
 
       }
     },

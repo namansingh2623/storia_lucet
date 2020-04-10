@@ -9,9 +9,10 @@
     arrows
     transition-prev="slide-right"
     transition-next="slide-left"
-    class="bg-grey-1"
+    class="bg-grey-4"
+    control-color="black"
   >
-    <q-carousel-slide class="row flex flex-center"  v-for="(slide,index) in slideImages" :name="index" v-bind:key="slide.id" >
+    <q-carousel-slide class="row flex flex-center"  v-for="(slide,index) in slideImages" :name="slide.id" v-bind:key="slide.id" >
       <q-img class="col-8  self-center" ratio="1" :src="slide.src" style=""></q-img>
     </q-carousel-slide>
   </q-carousel>
