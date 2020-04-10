@@ -1,7 +1,8 @@
 <template>
-  <div class="row flex-center">
+  <div class="row flex-center text-white ">
     <h3 class="col-12">Clarity</h3>
-    <p class="electron-hide text-h6 col-12 self-center">{{clarityText}}</p>
+    <q-img class="col-xs-12 col-sm-12 col-md-6 col-lg-6 q-mx-lg" style="width: 400px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRrGHqyX884bInz_7KGYWu0eCBKrZG62sdDcpO8Rrt6i-BfjBeZ&usqp=CAU"></q-img>
+    <p class="col-xs-12 col-sm-12 col-md-6 col-lg-6  text-h6 self-center">{{clarityText}}</p>
 <!--    <ul class="col-6">-->
 <!--      <li class="text-black" v-for="li in clarity">{{li}}</li>-->
 

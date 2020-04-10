@@ -1,5 +1,6 @@
 <template>
-  <q-page style-fn="myTweak"  style="background: #24424D" >
+  <!--24424D-->
+  <q-page style-fn="myTweak"  style="background: linear-gradient(to bottom,#2c3e50,#2c3e50)" >
     <div class="row q-gutter-y-lg">
       <div class="col-12">
         <top-carousal></top-carousal>
@@ -38,7 +39,7 @@
         </q-card-section>
 
       </q-card>
-      <q-card  bordered square class="col-12">
+      <q-card  bordered square class="OverView  col-12">
         <q-card-section>
             <overview-comp></overview-comp>
         </q-card-section>
@@ -53,7 +54,7 @@
           </q-card-section>
         </q-card>
 
-      <q-card bordered square class="ClarityCard col-12">
+      <q-card bordered square class="ClarityCard col-12 transparent">
           <q-card-section>
             <clarity-comp></clarity-comp>
           </q-card-section>
