@@ -1,7 +1,7 @@
 <template>
   <div class="row q-ma-none">
-    <h2 class="col-12">Overview</h2>
-    <h5 class="col-12 ellipsis">Calculate The High Wholesale Value Before You Buy Or Sell A Diamond</h5>
+    <h3 class="col-12">Overview</h3>
+    <h5 class="col-12 text-weight-bold">Calculate The High Wholesale Value Before You Buy Or Sell A Diamond</h5>
     <p class="col-12 text-h6">{{overviewText}}</p>
   </div>
 </template>

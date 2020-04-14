@@ -10,12 +10,12 @@
 
 
     >
-      <q-carousel-slide class="row flex flex-center" v-for="cut in cuts" :key="cut.h3Header" :name="cut.h3Header">
+      <q-carousel-slide class="row flex flex-center" v-for="cut in cuts" :key="cut.h3Header" :name="cut.h3Header      ">
         <q-img :src="cut.imgurl" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" ratio="1" style="height:300px "/>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <div class="row flex-center flex q-gutter-y-lg">
-          <div class="text-h3 text-black self-center">{{cut.h3Header}}</div>
-          <div class="text-subtitle1 text-black self-center">{{cut.pTagText}}</div>
+          <p class="text-h3 text-black self-center">{{cut.h3Header}}</p>
+          <p class="text-h6 text-black self-center">{{cut.pTagText}}</p>
           </div>
           </div>
       </q-carousel-slide>

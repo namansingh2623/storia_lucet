@@ -1,12 +1,11 @@
 <template>
   <q-layout view="hHh lpR fFf">
 
-    <q-header reveal elevated class=" text-white" style="background: #24424D">
-      <q-toolbar>
-        <q-toolbar-title>
+    <q-header reveal  class=" text-white" style="background: #24424D">
+        <h4 class="text-weight-bold q-mx-lg">
           {{title}}
-        </q-toolbar-title>
-      </q-toolbar>
+        </h4>
+
     </q-header>
     <q-page-container>
       <router-view />

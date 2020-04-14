@@ -9,7 +9,7 @@
     arrows
     transition-prev="slide-right"
     transition-next="slide-left"
-    class="bg-transparent"
+    class=""
     control-color="black"
   >
     <q-carousel-slide class="row flex flex-center"  v-for="(slide) in slideImages" :name="slide.id" v-bind:key="slide.id" >
@@ -30,6 +30,7 @@
               {id:'3',srcs:'https://4cs.gia.edu/wp-content/uploads/2016/08/Hero_Clarity_990x500.jpg'},
               {id:'4',srcs:'https://4cs.gia.edu/wp-content/uploads/2016/08/Hero_DIAMOND_CUT_990x500_EN.jpg'},
               {id:'5',srcs:'https://4cs.gia.edu/wp-content/uploads/2016/08/Hero_Carat-Weight_990x500.jpg'},
+              {id:'6',srcs:'https://4cs.gia.edu/wp-content/uploads/2016/08/PUBL160028_SC_4Cs_Spokes_990x500_ENG_v1.jpg'},
             ],
           }
       }

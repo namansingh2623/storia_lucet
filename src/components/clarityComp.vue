@@ -1,7 +1,8 @@
 <template>
-  <div class="row flex-center text-white ">
+  <div class="row flex-center text-black ">
     <h3 class="col-12">Clarity</h3>
-    <q-img class="col-xs-12 col-sm-12 col-md-6 col-lg-6 q-mx-lg" style="width: 400px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRrGHqyX884bInz_7KGYWu0eCBKrZG62sdDcpO8Rrt6i-BfjBeZ&usqp=CAU"></q-img>
+    <q-img class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="width: 500px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRrGHqyX884bInz_7KGYWu0eCBKrZG62sdDcpO8Rrt6i-BfjBeZ&usqp=CAU"></q-img>
+    <div class="col-md-1 col-lg-1 "></div>
     <p class="col-xs-12 col-sm-12 col-md-6 col-lg-6  text-h6 self-center">{{clarityText}}</p>
     <div class="col-12">
       <clarity-carousal-comp :slide="slide" :clarities="clarities"></clarity-carousal-comp>
@@ -20,9 +21,7 @@
               ' Diamonds without these birthmarks are rare, and rarity affects a diamond’s value. Using' +
               ' the GIA International Diamond Grading System™, diamonds are assigned a clarity grade that' +
               ' ranges from flawless (FL) to diamonds with obvious inclusions (I3).\n' +
-              'Every diamond is unique. None is absolutely perfect under 10× magnification, ' +
-              'though some come close. Known as Flawless diamonds, these are exceptionally rare. Most jewelers' +
-              ' have never even seen one.\n' +
+              'Every diamond is unique. '+
               'The GIA Clarity Scale contains 11 grades, with most diamonds falling into the VS (very slightly included)' +
               ' or SI (slightly included) categories. \n',
             clarity:['Flawless (FL) - No inclusions or blemishes are visible to a skilled grader using 10× magnification',
@@ -32,16 +31,18 @@
               'Slightly Included (SI1 and SI2) - Inclusions are noticeable to a skilled grader under 10x magnification',
               'Included (I1, I2, and I3) - Inclusions are obvious under 10× magnification and may affect transparency and brilliance'],
             slide: 'FL',
+            // Well I am the best!! Top of my class
+            // I might not have all the sparkle but i am affordable
             clarities:[
-              {id:'FL',name:'Flawless',comment:'Well i am the best!! top of my class',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/IF_1.jpg' },
+              {id:'FL',name:'Flawless',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/IF_1.jpg' },
               {id:'IF',name:'Internally Flawless',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/IF_1.jpg'},
-              {id:'VVS1',name:'VERY, VERY SLIGHTLY INCLUDED',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/VVS1_1.jpg'},
-              {id:'VVS2',name:'VERY, VERY SLIGHTLY INCLUDED',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/VVS2_1.jpg'},
-              {id:'VS1',name:'VERY SLIGHTLY INCLUDED',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/VS_1.jpg'},
-              {id:'VS2',name:'VERY SLIGHTLY INCLUDED',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/VS2_1.jpg'},
-              {id:'SI1',name:'SLIGHTLY INCLUDED',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/SI1_1.jpg'},
-              {id:'SI2',name:'SLIGHTLY INCLUDED',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/SI2_1.jpg'},
-              {id:'I2',name:'INCLUDED',comment:'I might not have all the sparkle but i am affordable',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/I1_1.jpg'},
+              {id:'VVS1',name:'Very, Very Slightly Included',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/VVS1_1.jpg'},
+              {id:'VVS2',name:'Very, Very Slightly Included',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/VVS2_1.jpg'},
+              {id:'VS1',name:'Very Slightly Included',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/VS_1.jpg'},
+              {id:'VS2',name:'Very Slightly Included',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/VS2_1.jpg'},
+              {id:'SI1',name:'Slightly Included',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/SI1_1.jpg'},
+              {id:'SI2',name:'Slightly Included',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/SI2_1.jpg'},
+              {id:'I2',name:'Included',comment:'',url:'https://4cs.gia.edu/interactive-4cs/img/clarity/I1_1.jpg'},
             ]
 
           }
