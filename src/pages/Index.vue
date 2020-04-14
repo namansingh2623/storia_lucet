@@ -58,8 +58,10 @@
           <q-card-section>
             <clarity-comp></clarity-comp>
           </q-card-section>
+      </q-card>
+      <q-card class="ColorCard col-12">
         <q-card-section>
-          <clarity-carousal-comp></clarity-carousal-comp>
+          <color-comp></color-comp>
         </q-card-section>
       </q-card>
     </div>
@@ -73,8 +75,9 @@ import ClarityComp from "../components/clarityComp";
 import CutComp from "../components/cutComp";
 import OverviewComp from "../components/overviewComp";
 import ClarityCarousalComp from "../components/clarityCarousalComp";
+import ColorComp from "../components/ColorComp";
   export default {
-    components:{ClarityCarousalComp, OverviewComp, CutComp, ClarityComp, TopCarousal, my_carousal},
+    components:{ColorComp, ClarityCarousalComp, OverviewComp, CutComp, ClarityComp, TopCarousal, my_carousal},
     data(){
       return{
 
@@ -90,6 +93,7 @@ import ClarityCarousalComp from "../components/clarityCarousalComp";
           Clarity:'',
           cut:'',
         },
+
 
       }
     },
