@@ -1,21 +1,26 @@
 <template>
   <div class="">
     <q-carousel
-      arrows
       animated
       v-model="slide"
       control-color="black"
       style="height: fit-content"
+      infinite
       autoplay="6000"
+      arrows
+      transition-prev="slide-right"
+      transition-next="slide-left"
 
 
     >
-      <q-carousel-slide class="row flex flex-center" v-for="cut in cuts" :key="cut.h3Header" :name="cut.h3Header      ">
-        <q-img :src="cut.imgurl" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" ratio="1" style="height:300px "/>
+      <q-carousel-slide class="row flex flex-center" v-for="cut in cuts" :key="cut.h3Header" :name="cut.h3Header">
+<!--        style=" max-height: 300px; min-height: 300px"-->
+
+        <q-img :src="cut.imgurl" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style=" max-height: 250px; min-height: 250px"/>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <div class="row flex-center flex q-gutter-y-lg">
           <p class="text-h3 text-black self-center">{{cut.h3Header}}</p>
-          <p class="text-h6 text-black self-center">{{cut.pTagText}}</p>
+          <p class="text-h6 text-black self-center ">{{cut.pTagText}}</p>
           </div>
           </div>
       </q-carousel-slide>

@@ -8,6 +8,7 @@
       transition-next="slide-up"
       swipeable
       animated
+      infinite
       autoplay="6000"
       control-color="black"
       navigation-icon="radio_button_checked"
