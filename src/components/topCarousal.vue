@@ -5,7 +5,7 @@
     v-model="slide"
     navigation
     infinite
-    autoplay="1"
+    autoplay="6000"
     arrows
     transition-prev="slide-right"
     transition-next="slide-left"

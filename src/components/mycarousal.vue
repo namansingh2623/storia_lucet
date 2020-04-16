@@ -6,7 +6,7 @@
       v-model="slide"
       control-color="black"
       style="height: fit-content"
-      autoplay="1"
+      autoplay="6000"
 
 
     >
