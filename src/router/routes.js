@@ -3,6 +3,7 @@ const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
+    mode:'history',
     children: [
       { path: '', component: () => import('pages/Index.vue') },
       { path: '/aboutus', component: () => import('pages/AboutUs.vue') }
@@ -13,7 +14,7 @@ const routes = [
 // Always leave this as last one
 if (process.env.MODE !== 'history') {
   routes.push({
-    path:'' ,
+    path:'*' ,
     component: () => import('pages/Error404.vue')
   })
 }

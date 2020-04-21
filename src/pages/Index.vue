@@ -1,6 +1,6 @@
 <template>
   <!--24424D-->
-  <q-page style-fn="myTweak"  style="background: linear-gradient(to bottom,#2c3e50,#2c3e50)" >
+  <q-page style-fn="myTweak"  style="background: linear-gradient(to bottom,#076585,#fff)" >
     <div class="row q-gutter-y-lg">
       <div class="col-12">
         <top-carousal></top-carousal>

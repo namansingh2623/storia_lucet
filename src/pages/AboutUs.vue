@@ -1,10 +1,9 @@
 <template>
   <q-page>
-    <div class="row">
-      <h3 class="col-6">{{details.firstname}}</h3>
-      <h3 class="col-6">{{details.lastname}}</h3>
-      <h3 class="col-6">{{details.username}}</h3>
-      <h3 class="col-6">{{details.email}}</h3>
+    <div class="row flex flex-center">
+      <h2 class="col-12 self-center">Made By :</h2>
+      <h6 class="col-3 self-center">{{details.firstname}}  {{details.lastname}}</h6>
+      <h6 class="col-3 self-center">{{details.email}}</h6>
     </div>
   </q-page>
 </template>

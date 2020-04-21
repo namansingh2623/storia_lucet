@@ -18,10 +18,10 @@
 let p1= new Promise((resolve, reject)=>{
   let x=5;
   let data={
-    firstname:'naman',
-    lastname:'Singh',
+    firstname:'Bhavya',
+    lastname:'Batra',
     username:'Rum and Whiskey',
-    email:'namanchauahn8998@gmail.com',
+    email:'batrabhavya11@gmail.com',
     profilePic:'',
   }
   resolve(data);

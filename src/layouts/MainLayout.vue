@@ -1,8 +1,8 @@
 <template>
   <q-layout view="hHh lpR fFf">
-
-    <q-header reveal  class=" text-white row flex" style="background: #24424D">
-        <h4  class="text-weight-bold q-mx-lg col-2  ">
+    #870000
+    <q-header reveal  class=" text-white row flex" style="background: #076585">
+        <h4 class="text-weight-bold q-mx-lg col-2  " @click="goto">
           {{title}}
         </h4>
       <q-list class="col-10" >
@@ -24,6 +24,11 @@
     data () {
       return {
         title:'Storia Lucet'
+      }
+    },
+    methods:{
+      goto(){
+        this.$router.push('');
       }
     }
   }
