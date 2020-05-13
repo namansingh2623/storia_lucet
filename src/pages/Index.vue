@@ -38,7 +38,7 @@
 
            </div>
 
-                <h4 class="col-12 text-black">Price = {{price}} $8075 /-</h4>
+                <h4 class="col-12 text-black">Price = $ {{price}} /-</h4>
 
               <q-btn style="background: #24424D" @click="OnSubmit" dense label="Submit" class="col-3 self-center q-my-lg text-white" dense size="lg"></q-btn>
             </div>
@@ -91,7 +91,7 @@ import ClarityCarousalComp from "../components/clarityCarousalComp";
 import ColorComp from "../components/ColorComp";
 import CaratComp from "../components/caratComp";
 import DimondRepo from "../Repository/repository";
-import axios from "axios";
+
   export default {
     components:{CaratComp, ColorComp, ClarityCarousalComp, OverviewComp, CutComp, ClarityComp, TopCarousal, my_carousal},
     data(){
@@ -139,22 +139,19 @@ import axios from "axios";
           clarity: valueClarity
         }
         console.log("selected values in data cut=",data.shape+" |Carat="+data.carat+" | color= "+data.color+" | Clarity="+data.clarity)
-        // axios.post('http://localhost:3000/get-prices',data).then(
-        //   res=>console.log('',res)
-        // ).catch(err=>console.log('errors is =',err))
-        new Promise((resolve,reject)=>{
-          axios
-            .post('http://localhost:3000/get-prices',data)
+
+
+                  vm.$axios
+            .post(' https://storia-lucet-backend.herokuapp.com/get-prices',data)
             .then(res=>{
-              resolve(res);
-              console.log("succ")
+              vm.price = res.data.data;
             })
-            .catch(err=>{reject(err);
-                console.log("error")
+            .catch(err=>{
+              console.log("error",err);
             }
 
             )
-        })
+
 
       }
     },
